@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
 <fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
         minWidth="-Infinity" prefHeight="30.0" prefWidth="150.0"
-        type="AnchorPane" xmlns="http://javafx.com/javafx/8"
-        xmlns:fx="http://javafx.com/fxml/1">
+        type="AnchorPane" xmlns:fx="http://javafx.com/fxml/1" 
+        xmlns="http://javafx.com/javafx/8">
     <children>
         <HBox alignment="CENTER" layoutX="-65.0" layoutY="-56.0" spacing="5.0"
         AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"

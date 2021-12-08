@@ -29,14 +29,14 @@ public class SelectorDeslizamiento extends AnchorPane {
     private Label label;
     @FXML
     private Button nextButton;
+    
     ArrayList<String> items;
     int selectedIndex;
     private boolean repetitive;
 
     public SelectorDeslizamiento() {
         
-        FXMLLoader fxmlLoader = new FXMLLoader(
-            getClass().getResource("selector_deslizamiento.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("FXMLSelectorDeslizamiento.fxml"));
         
         fxmlLoader.setRoot(this);
         fxmlLoader.setController(this);
@@ -46,8 +46,6 @@ public class SelectorDeslizamiento extends AnchorPane {
         } catch (IOException exception) {
             throw new RuntimeException(exception);
         }
-        
-        
         
         items = new ArrayList<>();
         selectedIndex = 0;
@@ -125,8 +123,7 @@ public class SelectorDeslizamiento extends AnchorPane {
         return onActionProperty().get();
     }
     
-    private ObjectProperty<EventHandler<ActionEvent>> onAction = new
-        ObjectPropertyBase<EventHandler<ActionEvent>>() {
+    private ObjectProperty<EventHandler<ActionEvent>> onAction = new ObjectPropertyBase<EventHandler<ActionEvent>>() {
             @Override
             protected void invalidated() {
                 setEventHandler(ActionEvent.ACTION, get());
