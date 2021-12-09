@@ -6,5 +6,5 @@
 
 <fx:root type="javafx.scene.layout.HBox" xmlns:fx="http://javafx.com/fxml">
     <TextField fx:id="textField"/>
-    <Button text="Click Me" onAction="#doSomething"/>
+    <Button fx:id="btn" text="Grabar"/>
 </fx:root>
