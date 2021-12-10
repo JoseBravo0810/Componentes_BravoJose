@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="397.0" prefWidth="593.0" type="AnchorPane" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane alignment="CENTER" hgap="15.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="246.0" prefWidth="593.0" vgap="15.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="359.0" minWidth="8.0" prefWidth="178.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="359.0" minWidth="10.0" prefWidth="178.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="310.0" minWidth="10.0" prefWidth="179.0" />
+            <ColumnConstraints />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="124.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="102.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="53.0" prefWidth="584.0" text="Temporizador" textAlignment="CENTER" textFill="#0a0a0a" GridPane.columnSpan="4">
+               <font>
+                  <Font size="39.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="46.0" prefWidth="267.0" text="Segundos" textAlignment="CENTER" GridPane.columnSpan="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <TextField maxHeight="40.0" maxWidth="125.0" prefHeight="24.0" prefWidth="307.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Button fx:id="btnActivaTempo" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="48.0" prefWidth="84.0" text="Start" textAlignment="CENTER" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="pauseTempo" mnemonicParsing="false" prefHeight="48.0" prefWidth="84.0" text="Pause" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="resumeTempo" mnemonicParsing="false" prefHeight="48.0" prefWidth="107.0" text="Resume" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="2">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </GridPane>
+      <Label fx:id="lbTempo" alignment="CENTER" layoutX="18.0" layoutY="246.0" prefHeight="78.0" prefWidth="564.0" text="0" textAlignment="CENTER">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Label>
+   </children>
+</fx:root>
